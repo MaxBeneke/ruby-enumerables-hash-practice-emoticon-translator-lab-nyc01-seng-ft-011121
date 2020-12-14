@@ -28,8 +28,8 @@ def get_japanese_emoticon(emoticon_file, english_emoticon)
   
   emoticon_list.each do |description, language| 
     
-    english = emoticon_list[description][language][0]
-    japanese = emoticon_list[description][language][1]
+    english = emoticon_list[description][:english]
+    japanese = emoticon_list[description][:japanese]
   
   if english_emoticon == english
     english_emoticon = japanese
