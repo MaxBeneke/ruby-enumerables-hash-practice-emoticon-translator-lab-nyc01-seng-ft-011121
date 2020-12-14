@@ -23,8 +23,8 @@ def load_library(emoticon_file)
 end
 
 
-def get_japanese_emoticon(english_emoticon)
-  emoticon_list = load_library('./lib/emoticons.yml')
+def get_japanese_emoticon(emoticon_file, english_emoticon)
+  emoticon_list = load_library(emoticon_file)
   
   emoticon_list.each do |description, language| 
     
